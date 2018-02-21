@@ -1,0 +1,42 @@
+<!--<div class="row">
+    <div class="col-sm-12">
+<h3 class="pt-5 text-center">Top Heroes</h3>
+    </div>
+</div>-->
+
+<section class="section pb-3">
+
+        <!--Section heading-->
+        <h2 class="section-heading h1 pt-4 text-center"><strong>Top Heroes</strong></h2>
+
+
+  <div class="row text-center">
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-r" *ngFor="let hero of heroes" >
+                <a routerLink="/detail/{{hero.id}}">
+                
+                  <button type="button" class="btn btn-blue-grey waves-light w-100 h-100" mdbRippleRadius>{{hero.name}}</button>
+          </a>
+
+        </div> 
+
+
+  <!--<a *ngFor="let hero of heroes" 
+      routerLink="/detail/{{hero.id}}">
+      
+        <button type="button" class="btn btn-primary waves-light" mdbRippleRadius>{{hero.name}}</button>
+
+
+      
+
+
+   
+  
+  </a>-->
+</div>
+
+
+        
+
+
+</section>
+<app-hero-search></app-hero-search>
